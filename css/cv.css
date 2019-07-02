@@ -1,0 +1,161 @@
+﻿@import url("../css/footer.css");
+
+body{
+    /*background-color:rgba(112, 104, 104, 0.767);*/
+    background-image: url(/php_portfolio/picture/fond_cv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
+}
+
+.presentation{
+    padding:2em;
+    width: 100%;
+    height:25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1em 1em 2em white, 0 0 1em white, 0 0 0.2em white;
+    font-size: 2.5em;
+}
+.general {
+    display: flex;
+}
+.left.Parcours, .right.Competence {
+    width:50%;
+}
+#Photo_Dan{
+    float:left;
+    width: auto;
+    border-radius: 250px;
+}
+/* Parcours */
+.header_parcours{
+    text-align: center;
+}
+.left.Parcours{
+    height: 500px;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+#ligne::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 6px;
+    background: black;
+}
+
+.contenu-parcours .date {
+    float: center;
+    padding: .8em 0;
+    opacity: .7;
+}
+
+.contenu-parcours {
+    text-align: center;
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 0.25em;
+    padding: 1em;
+    background:rgba(255, 0, 0, 0.493);
+}
+.contenu-parcours > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.5em;
+}
+.contenu-parcours > h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2em;
+}
+/* Compétence */
+.right.Competence{ 
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+.progress{
+    margin-bottom: 2em;
+}
+h2{
+    text-align:center;
+    margin-bottom: 1em;
+    font-size: 2em;/*5vw pour tel*/
+}
+font{
+    margin-left: 15px;
+    text-align: left;
+}
+
+/*footer*/
+h3{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 768px){
+    .presentation{
+        padding: 1em;
+        text-align: center;
+    }
+    .contenu-parcours{
+        text-align: center;
+        margin-right: 1em;
+    }
+    #Photo_Dan{
+        height: 5em;
+        margin-left: auto;
+        margin-right:auto;
+        padding-left: auto;
+        padding-right: auto;
+        width: auto;
+        border-radius: 250px
+    }
+    h2{
+        text-align:center;
+        margin-bottom: 1em;
+        font-size: 3vw;
+    }
+    .general {
+        display: block;
+    }
+    .left.Parcours, .right.Competence {
+        width:100%;
+    }
+    .presentation{
+        padding:2em;
+        width: 100%;
+        height:25%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (min-height:1366px){
+    footer{
+        position:absolute;
+        bottom:0;
+    }
+    .left.Parcours{
+        text-align: center
+        height: 650px;
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+    .presentation{
+        padding:2em;
+        width: 100%;
+        height:25%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+    }
+}
